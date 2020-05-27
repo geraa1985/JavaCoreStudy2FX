@@ -14,7 +14,6 @@ public class Controller {
     private TextArea textArea;
 
     public void onClickSend() {
-        textArea.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
         textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
@@ -26,7 +25,6 @@ public class Controller {
 
     public void enter(KeyEvent keyEvent) {
         if (keyEvent.getCode() == KeyCode.ENTER) {
-            textArea.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
             textArea.appendText(textField.getText() + "\n");
             textField.clear();
             textField.requestFocus();

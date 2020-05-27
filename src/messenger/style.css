@@ -20,10 +20,10 @@
     -fx-background-color: chocolate;
 }
 
-/*.text-area *.text {*/
-/*    -fx-text-alignment: right;*/
+.text-area *.text {
+    -fx-text-alignment: right;
 
-/*}*/
+}
 
 .text-area *.scroll-bar {
     -fx-opacity: 0.2;
