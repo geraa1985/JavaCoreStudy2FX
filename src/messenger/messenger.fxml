@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="messenger.Controller">
+    <TextArea fx:id="textArea" editable="false" wrapText="true" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
+    <TextField fx:id="textField" onKeyPressed="#enter" promptText="Введите сообщение" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="90.0" />
+    <Button id="send" mnemonicParsing="false" onAction="#onClickSend" text="Send" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="10.0" />
+   <Button id="exit" mnemonicParsing="false" onAction="#clickOnExit" text="X" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+</AnchorPane>
