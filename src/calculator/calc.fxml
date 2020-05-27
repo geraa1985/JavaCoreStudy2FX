@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="152.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.Controller">
+
+    <stylesheets>
+        <URL value="@/calculator/style.css"/>
+    </stylesheets>
+
+    <TextField fx:id="textField" accessibleText="0">
+        <font>
+            <Font size="30.0"/>
+        </font>
+        <VBox.margin>
+        <Insets bottom="15.0" left="10.0" right="10.0" top="15.0"/>
+        </VBox.margin>
+    </TextField>
+    <HBox alignment="CENTER" prefHeight="102.0" prefWidth="290.0">
+        <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </VBox.margin>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#setOperand" text="+" textAlignment="CENTER">
+            <font>
+                <Font size="30.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#setOperand" text="-" textAlignment="CENTER">
+            <font>
+                <Font size="30.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#setOperand" text="*" textAlignment="CENTER">
+            <font>
+                <Font size="30.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#setOperand" text="/" textAlignment="CENTER">
+            <font>
+                <Font size="30.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+        <Button id="start" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#clickOnStart" text="=" textAlignment="CENTER">
+            <font>
+                <Font size="30.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>
