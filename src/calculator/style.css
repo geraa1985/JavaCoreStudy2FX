@@ -1,0 +1,42 @@
+.button:hover {
+    -fx-background-color: #5ecb36;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.1 , 2 , 2 );
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.button:pressed {
+    -fx-background-color: #5ecb36;
+    -fx-effect: dropshadow( one-pass-box , black , 0 , 0.0 , 0 , 0 );
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.text-field {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 30px;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+    -fx-background-radius: 26;
+    -fx-border-width: 2px;
+}
+
+.root{
+    -fx-background-color: aquamarine;
+}
+
+.button {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 30px;
+    -fx-background-color: burlywood;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25;
+    -fx-background-insets: 1%;
+    -fx-background-radius: 26;
+}
+
+#start {
+    -fx-background-color: coral;
+}
+
