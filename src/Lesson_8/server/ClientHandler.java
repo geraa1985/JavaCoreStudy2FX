@@ -63,6 +63,7 @@ public class ClientHandler {
 
                             if (newNick != null) {
                                 if (!server.isLoginAuthorized(login)) {
+                                    socket.setSoTimeout(0);
                                     sendMsg("/authok " + newNick);
                                     nick = newNick;
                                     server.subscribe(this);
